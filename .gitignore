@@ -1,6 +1,6 @@
 node_modules/
 dist/
 .env
-chroma/
+# chroma/
 *.log
 .DS_Store

@@ -20,22 +20,20 @@ Copy `.env.example` to `.env` and set your `OPENAI_API_KEY`.
 
 ## Run Chroma
 
-Start Chroma before ingest/retrieve:
+Start and setup Chroma before ingest/retrieve:
 
 ```bash
 npx chroma run
 ```
 
-Or with Docker:
-
-```bash
+<!-- ```bash
 docker run -p 8000:8000 chromadb/chroma
-```
+``` -->
 
 **Connection issues?** If you get `ChromaConnectionError` or `EPIPE`, add to `.env`:
 
 ```
-CHROMA_URL=http://127.0.0.1:8000
+CHROMA_URL=http://localhost:8000
 ```
 
 Using `127.0.0.1` instead of `localhost` can fix DNS-related connection drops.
