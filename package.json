@@ -1,0 +1,28 @@
+{
+  "name": "rag-docs",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "ingest": "tsx scripts/ingest.ts",
+    "retrieve": "tsx scripts/retrieve.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@langchain/community": "^0.3.21",
+    "@langchain/core": "^0.3.21",
+    "@langchain/openai": "^0.3.17",
+    "chromadb": "^2.0.4",
+    "dotenv": "^16.4.5",
+    "gray-matter": "^4.0.3",
+    "js-tiktoken": "^1.0.12"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "fast-glob": "^3.3.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.6"
+  }
+}
