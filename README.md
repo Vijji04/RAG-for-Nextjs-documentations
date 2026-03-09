@@ -11,7 +11,7 @@ Ingests Next.js documentation (MDX/MD) with heading-aware chunking, stores embed
 ## Setup
 
 ```bash
-npm install --ignore-scripts
+npm install
 ```
 
 > Use `--ignore-scripts` if the `sharp` native dependency fails to build. The pipeline works without it.
